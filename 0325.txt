@@ -1,0 +1,52 @@
+2021-03-25
+SQL Developer없이 이클립스에서만 실행===========================================
+window - show view -other - Data Management - Data Source Exploer
+
+Database Connections에 우클릭
+DB선정 Oracle클릭
+아래에 New Oracle을 접속의 이름 원하는것으로 변경
+next>>>>>>
+오른쪽 위쪽에 더보기 아이콘
+Oracle Thin Driver 11Version클릭
+JAR List로 이동>>>
+드러있는 jar remove키로 삭제
+add키 눌러서 C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib 경로의 ojdbc6.jar 선택
+Properties로 이동>>>>>>
+USER
+jdbc:oracle:thin:@127.0.0.1:1521:xe
+xe
+oracle.jdbc.OracleDriver
+1111
+spring
+ok
+
+Save password체크박스 체크
+Test Connection클릭
+Next Finish 끝
+======================================================================
+새로운 프로젝트파일에 sql 패키지 만들고
+패키지에 우클릭 new - other - SQL File 검색후선택
+name에 staff치고 ok
+
+Oracle의 sql영역이 생긴것이다
+--이 주석쓰는법임
+
+쿼리문 적어준 뒤 상단에 Connection profile에서 선택해주기(Oracle_11, SPRING, xe)
+
+쿼리문 실행법
+원하는 블럭 부분 실행 -> 블록잡고 우클릭 Excute Selected text
+전체 실행 -> 우클릭 Excute All
+커서 두고 커서 행 실행-> 커서찍고 우클릭 Excute Current test
+======================================================================
+odbc6 도 빌드패스 설정해주기
+======================================================================
+domain, vo(value object), dto(data transfer object)
+데이터값을 저장할 수 있는곳 세개다 같은이름임 패키지로 만들어준다
+회사에서 부르는 이름으로 부르면됨
+
+dao :[다우] DB와 직접 통신을 주고받는 레이어,  DB에 access
+      테이블별로 다우가 하나정도 만들어져있다고 보면된다.
+      한 테이블의 정보를 넣었다빼고
+      dao 클래스안에 crud 메소드를 넣어서 관리
+
+

@@ -1,0 +1,18 @@
+21-03-19
+
+	Terran
+		Marine
+		Firebat
+		Tank
+		Bunker: Marine과 Firebat만 입장이 가능
+
+	Terran[] terrans = new Terran[10];
+	terrans[0].add(new Marine());
+	terrans[1].add(new Firebat());
+	terrans[2].add(new Tank());
+
+	Bunker bunker = new Bunker();
+	bunker.add(terrans[0]);
+	bunker.add(terrans[1]);
+	bunker.add(terrans[2]);	//불가능
+	

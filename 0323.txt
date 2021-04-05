@@ -1,0 +1,21 @@
+2021-03-23
+
+Collection	
+
+List		SET
+		
+ArraryList		HashSet
+LinkedList 	LinkdeHashSet
+
+
+
+Node
+  Node Previous
+  Data data
+  Node next
+
+
+
+mapping
+DNS : IP ... Domain mapping server
+XX.XX.XX.XX ... www.naver.com

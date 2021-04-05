@@ -1,0 +1,14 @@
+git config --global user.name "soeun1365"
+git config --global user.email "soeun1365@naver.com"
+cd d:/spring0303/javastudy
+git init
+git add .
+git commit -m '[01]main=>create repository'
+git remote add origin 경로
+git push origin main
+git pull origin main --allow-unrelated-histories
+:wq
+git push origin main
+
+★올릴땐
+commit & push 만 하면된다.
