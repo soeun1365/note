@@ -80,11 +80,12 @@ file - switch workspace - other
 
 ★★★프로젝트에 ojdbc6.jar Buildpath잡기
 
-  //디폴트 생성자(1. 안만들기, 2. 만들기)
+  //디폴트 생성자(1안만들기, 2만들기)
   public BookDto(){}
 
   //getter,setter
 }
+
 
 문제에서 book.sql파일제공 - 작성된 쿼리문 실행 ->Oracle SQL developer에서 spring계정으로 실행해서
 			book테이블 생성

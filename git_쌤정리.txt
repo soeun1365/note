@@ -1,0 +1,150 @@
+git  :  git-scm.com
+
+깃 설치할때 main에 체크해야함★★★
+shift+insert키 누르면 붙여넣기됨
+
+로컬저장소(local) → 원격저장소(remote)
+
+0. 사용자 등록
+git config --global user.name "koreaitlecture"
+git config --global user.email "koreaitlecture@xxx.xxx"
+
+0-1확인
+git config --global user.name
+git config --global user.email
+
+1. 로컬저장소 만들기
+   * 로컬저장소 : d:/spring0303/javastudy
+   1) 이동 : cd d:/spring0303/javastudy
+   2) 지정 : git init
+   → 로컬저장소로 지정되면 ".git" 숨김 폴더가 생성됩니다.
+
+2. 스태이징하기
+   1) 골라서 스태이징 : git add 소스코드attach.zip
+   2) 전체 스태이징 : git add .
+
+3. 커밋하기 (로컬저장소에 저장하기)
+   반드시 "커밋 메시지"를 작성합니다.
+   예)  [01]main: add xxx.java, modify xxx.java
+   1) git commit
+   2) Vim이 열립니다.
+       메시지 작성 후 빠져 나오기
+   * 간단한 메시지의 경우
+      git commit -m '커밋메시지'
+
+4. github.com 회원가입 및 로그인
+
+5. github.com - create repository : 원격저장소 생성하기
+   1) 이름 : javastudy
+   2) 옵션
+       (1) add README.md
+       (2) add .gitignore - template (java)
+
+settings 눌러서 master인경우 master로 바꿔야함
+
+6. 원격저장소의 주소
+    https://github.com/koreaitlecture/javastudy.git
+
+7. 로컬저장소(D:/SPRING0303/javastudy)의 원격저장소 등록하기
+   - 원격저장소 : origin
+
+# 로컬저장소 -> 원격저장소 (git push)
+# 원격저장소 -> 로컬저장소 (git pull)
+
+8. 최초 로컬저장소와 원격저장소를 연결하려면
+   1) pull을 먼저 하고,
+   2) push를 나중에 해야 한다.
+
+------------------------------------------------------
+ITSC@DESKTOP-VM2C2DA MINGW64 ~
+$ git config --global user.name
+koreaitlecture
+
+ITSC@DESKTOP-VM2C2DA MINGW64 ~
+$ git config --global user.name 'koreaitlecture'
+
+ITSC@DESKTOP-VM2C2DA MINGW64 ~
+$ git config --global user.email
+min-k-t@hanmail.net
+
+ITSC@DESKTOP-VM2C2DA MINGW64 ~
+$ git config --global user.email 'min-k-t@hanmail.net'
+
+ITSC@DESKTOP-VM2C2DA MINGW64 ~
+$ cd d:/spring0303/javastudy
+
+ITSC@DESKTOP-VM2C2DA MINGW64 /d/spring0303/javastudy
+$ git init
+Initialized empty Git repository in D:/SPRING0303/javastudy/.git/
+
+ITSC@DESKTOP-VM2C2DA MINGW64 /d/spring0303/javastudy (main)
+$ git add .
+warning: LF will be replaced by CRLF in workspace/.metadata/.log.
+The file will have its original line endings in your working directory
+...
+
+ITSC@DESKTOP-VM2C2DA MINGW64 /d/spring0303/javastudy (main)
+$ git commit -m '[01]main=>create repository'
+[main (root-commit) e9b80c1] [01]main=>create repository
+ 1030 files changed, 42143 insertions(+)
+ create mode 100644 workspace/.metadata/.lock
+...
+
+ITSC@DESKTOP-VM2C2DA MINGW64 /d/spring0303/javastudy (main)
+$ git remote add origin https://github.com/koreaitlecture/javastudy.git
+
+ITSC@DESKTOP-VM2C2DA MINGW64 /d/spring0303/javastudy (main)
+$ git push origin main  # 최초 실패하게 되어 있음.
+To https://github.com/koreaitlecture/javastudy.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/koreaitlecture/javastudy.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ITSC@DESKTOP-VM2C2DA MINGW64 /d/spring0303/javastudy (main)
+$ git pull origin main --allow-unrelated-histories
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 841 bytes | 5.00 KiB/s, done.
+From https://github.com/koreaitlecture/javastudy
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+Merge made by the 'recursive' strategy.
+ .gitignore | 23 +++++++++++++++++++++++
+ README.md  |  1 +
+ 2 files changed, 24 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+
+
+
+:wq 입력(w 저장, q종료)
+
+
+
+
+ITSC@DESKTOP-VM2C2DA MINGW64 /d/spring0303/javastudy (main)
+$ git push origin main
+Enumerating objects: 1285, done.
+Counting objects: 100% (1285/1285), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (1179/1179), done.
+Writing objects: 100% (1284/1284), 13.06 MiB | 4.12 MiB/s, done.
+Total 1284 (delta 389), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (389/389), done.
+To https://github.com/koreaitlecture/javastudy.git
+   221697b..6a8aa1b  main -> main
+
+
+cd c:/exam/network
+git add.
+git commit -m
+git push origin main
+해서 올리기
+
+SQL에서 팀, 깃, 모두추가 모두커밋, 푸시
