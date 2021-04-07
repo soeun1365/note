@@ -17,3 +17,4 @@ git push origin main
   3. git commit -m '  '
   4. git push origin main
   
+git에 올리는 파일은 닫아주고 진행하기 
