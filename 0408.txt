@@ -1,0 +1,10 @@
+2021-04-08
+
+DDL쪽 문제
+
+CREATE
+ALTER
+DROP
+
+어제 준 자료 TABLE SPACE 보기
+만들었으면 지우는 쿼리도 해보기
