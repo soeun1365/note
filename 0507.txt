@@ -1,0 +1,16 @@
+2021-05-07
+jquery.com
+주황버튼 클릭 - (다운받기)
+
+Download the compressed, production jQuery 3.6.0
+compressed라는것은 압축파일임
+
+Download the uncompressed, development jQuery 3.6.0
+uncompressed development 라는 것은 압축하지않은 개발자용
+이것 다운로드
+D:\spring0303\webstudy\JS\WebContent\js에 저장하기
+
+
+페이지 중간쯤
+Using jQuery with a CDN에
+링크(https://code.jquery.com)클릭, 3점대 jQuery 3.x, minified링크클릭
