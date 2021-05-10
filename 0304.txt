@@ -1,0 +1,34 @@
+SQL Developer
+Ctrl 엔터 : 해당 줄 실행
+
+
+eclipse실행
+[Perspective]-[Open perspective]-java
+자바언어의 개발
+
+[Window]-[Perspective]-[Reset Perspective]
+뷰 디폴트상태로 리셋
+
+인코딩, 한글처리
+1. [window]- [preferences]
+[general] content Tyles - Text선택 Default encoding 에
+UTF-8 적어줌
+
+2. [general] - Workspace - Text file encoding 라디오박스에
+Other체크, UTF-8체크
+
+[window]- [preferences]
+Appearance -테마셋팅 (다크모드 가능)
+
+Appearance - Color and Fonts
+Basic안에 Text Font 글꼴 설정 가능
+
+package 쓰는이유
+같은 이름의 class여도 서로 다른 폴더에 저장되게 하려고
+ex)MainClass
+
+
+Date 틑 서로 다른 클래스에 속삼
+
+Package이름 규칙 
+회사주소domain을 가직 

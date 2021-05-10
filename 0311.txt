@@ -1,0 +1,15 @@
+0311
+
+포맷완료
+다음순서대로 설치진행
+
+1.jdk - 8u202-windows-x64.exe
+2.DISK1 - setup.exe (password 는 1111로 설정)
+
+이클립스, SQP Developer 실행여부확인
+
+TMS주소: itsc.kedutms.com
+-수업자료공유에 "코딩폰트"다운받고 설치 사용
+
+임폴트 단축키
+- ctrl, shift, 영문o

@@ -1,0 +1,11 @@
+아이콘 가져오는 사이트
+https://fontawesome.com/icons/search?style=solid
+
+cdnjs
+https://cdnjs.com/
+
+web공부사이트
+https://www.w3schools.com/
+
+구글 폰트 사이트 - 무료
+https://fonts.google.com/

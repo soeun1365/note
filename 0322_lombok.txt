@@ -1,0 +1,45 @@
+2021-03-22
+
+lombok 이란?
+생성자, Getter, Setter 등을 자동으로 완성시켜주는 라이브러리
+
+
+lombok 사용방법
+프로젝트에 lombok.jar라이브러리를 추가
+	1)해당프로젝트 파일명 우클릭 Build path - Configuer Build Path		//해당 프로젝트에서만 롬복 사용가능
+	  Libraries 탭- add External JARs...클릭
+	  D:\spring0303\install\jar\LOMBOK의 jar파일 선택
+	※이클립스 이동 등 사유로 경로가 바뀌게 되면 이클립스가 안켜지므로
+		javaagent의 경로를 다시 올바르게 수정해 줘야한다.
+	※경로에 공백이나 한글이 포함되어있으도 이클립스가 켜지지 않습니다.
+
+
+
+
+lombok설치
+	1)명령 프롬프트 실행
+	2)lombok.jar 파일이 있는 디렉토리로 이동
+	cd D:\spring0303\install\jar\LOMBOK
+	 D: 엔터
+	3)lombok.jar실행
+	프롬프트에 java -jar lombok.jar 입력/ 그럼 실행됨 창이 뜨면
+	4)Specifty location을 눌러 이클립스.exe를 선택
+ 	lomboc을 설치 (롬복 설치는 이클립스에 설치하는것임 Pc가 아님)
+	5)install/update클릭
+	6)Quit installer클릭
+	7)확인
+	이클립스 폴더안에 eclipse.ini파일을 메모장으로 연다
+	마지막줄에 -javaagent:D:\spring0303\install\eclipse\lombok.jar 가 있는지 확인
+	8)이클립스 재시작해야 lombok을 사용할 수 있음
+
+
+
+lombok 사용방법
+클래스에 필드만 작성하고 애너테이션을 추가합니다.
+1) @Getter: Getter를 추가해 줍니다.
+2) @Setter: Setter를 추가해 줍니다.
+3) @NoArgsConstuctor: 매개변수 없는 생성자 만들어줍니다. (디폴트 생성자)
+4) @AllArgsConstructor: 모든 필드에 매개변수값을 전달하는 생성자를 추가합니다.
+5) @Data: Getter, Setter, 생성자 등을 추가해줍니다.
+
+주평가땐 롬복 문제 X, 재평가때 있을수도있음

@@ -1,0 +1,23 @@
+0318
+
+깃에 있는것 클론하기
+
+07_inheritance부터는 .project파일이 없다.
+나머지는 자동으로 내려받기 되지만
+07이후는 코드 복붙해야함
+
+1.임의의 워크스페이스로 열고,
+   show view - other - git repository, git staging
+   git repository에서 두번째것클릭(Clone a Git repository)
+   URL에 깃허브에서 copy초록버튼 눌러서 copy해온거 붙여넣기
+   아래에 User, PW 입력
+   next
+   directory에 browse버튼으로 불러올 장소 선택 가능
+   finish, 인터넷으로 내려받는것이기 때문에 기다리기
+
+2.git clone
+3. 워크스페이스 이동
+   file - switch workspace-other해서 workspace까지 이동
+
+javastudy에는 있는데 pakage exploer에는 안뜨는것
+import해야함 07은 .project파일이 없어서 import불가 나머지는 import하면 들어옴

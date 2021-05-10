@@ -1,0 +1,15 @@
+2021-03-29
+
+writter reader 이 들어가면 거의 char타입 
+
+stream 이 들어가면 거의 byte타입
+
+SELECT Max(no) from book;
+
+insert into book (no, title, writter, pubdate) values(?, ?, ?, SYSDATE)';
+
+DELETE from book WHERE no = ?;
+
+UPDATE book SET title =?, writter =? WHERER no = ?
+
+SELE

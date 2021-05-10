@@ -1,0 +1,27 @@
+백엔드 프로그래밍
+: 사용언어 Java
+
+HTML 파일은 Java로 만드려면 "문자 기반 출력 스트림(Writer)"
+
+  서블릿
+
+*.java
+class
+interface
+servlet
+
+
+서버측에서  HttpServletRequest
+	   HttpServletResponse
+
+오라클로 DB개발하기 때문에 포트번호 충돌 방지하려고 8080을 9090으로 변경하는것이다
+mySQL로 할 경우 변경하지 않아도 된다
+
+localhost:9090/01_SERVLET/MyServlet
+	01_SERVLET : Content path부분
+	MyServlet : URLmappings부분/네이버가 여기를 변경을 잘함 그래서 외부 해킹 방지함
+
+get/post/put/delete
+	->spring에서 REST방식할때 네가지 세팅해서 나갈것
+
+init, destroy, service 추가체크

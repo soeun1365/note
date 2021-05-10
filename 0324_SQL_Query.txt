@@ -1,0 +1,64 @@
+2021-03-24
+
+Oracle 11g Express Edition 설치 필수
+- 관리자: SYSTEM, SYS(기본으로 설정됨)
+- C:\oraclexe가 있어야 설치된것
+
+준비
+- 수업용계정: spring / 1111
+- JDBC
+- 오늘수업엔 SQL Developer은 있어도되고, 없어도되고
+
+- C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib 에 ojdbc6이라는 압축파일있음
+  압축 미리보기 가능
+- 압축미리보면 oracle-jdbc-driver-OracleDriver.class 이것 사용할것임
+- 경로외우기
+- 이렇게 정식으로 사용할 것임 oracle.jdbc.dircer.OracleDriver 클래스의이름임
+
+- java.sql.Connection클래스: Oracle 접속 담당
+- java.sql.PreparedStatement 클래스: 쿼리문 실행 
+- java.ResultSet클래스: 데이터베이스에서 가져온 레코드를 저장
+
+행, row, 레코드, record, 튜플, tuple
+열, column, 필드, field, 속성, attribute
+
+ResultSet 한 Row전체를 말함
+
+<주의사항>
+SQL -> String sql ="작성부" ;
+Oracle 쿼리문은 마지막에 세미콜론(;)넣고,
+String sql은 세미콜론(;)이 없어야합니다.(작성부)에 쿼리문 X
+
+<SQL쿼리문종류>
+1.     CREATE TABLE 테이블이름
+	(칼럼명 타입 제약조건
+	 칼럼명 타입 제약조건, ...);
+2.     DROP TABLE 테이블명; //지우면 복구불가, 웬만하면 WHERE절 동반함. 회사 망하지 않는이상 WHERE절 쓰지..
+
+3.[C]  INSERT INTO 테이블이름(칼럼, 칼럼, 카럼) VALUES (값, 값, 값);	//칼럼의 개수와 상관없이 VALUE에 S 항상 붙어있음
+4.[R]  SELECT 칼럼,칼럼,칼럼, ... FROM 테이블 WHERE 조건식; 		//WHERE 조건식은 생략가능, ResultSet클래스가 필요
+5.[U]  UPDATE 테이블 SET 업데이트내용 WHERE 조건식;		//WHERE 조건식은 생략가능
+6.[D]  DELETE FROM 테이블이름 WHERE조건식;		//WHERE 조건식은 생략가능
+
+
+ECLIPSE에 JAVA Project만들고 Build Path해서 ojdbc6 넣기 패키지 안에 들어가면 OracleDriver.class확인가능 그냥 있나 확인만해봄
+Build Path 할때 jar파일에서 가져와도 되지만
+C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib 에 ojdbc6을 가져와도됨
+노상관
+
+Build Path 잡아서 캡쳐하는문제 있음 ctrl + printscreen
+
+DDL: Data Definition Language
+create, drop
+
+DML (insert, update, delete) +DQL (select) =>DML이라고 하기도함
+실무에선 DML, DQL 구분함
+
+view(interface) -> bussiness -> persistance ->DB
+web화면 -> DB접속 등 ->DB통신(C,R,U,D) ->DB
+    l              l                   l                  l
+----------------------------------------------------
+                           l 
+                          ㅣ
+                    도메인(vo, dto등)
+

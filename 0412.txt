@@ -1,0 +1,14 @@
+2021-04-12
+
+java ee(enterprise edition)버전이기때문에 java web개발용 으로 실행할때도 서버실행을 하려고 기본동작으로 잡혀있음
+perspective에서 java ee -> java 로 바꿔주자
+
+인코딩은 중간에 바꾸면 안됨
+
+프로젝트 하나 만들고 build-path
+c드라이브의 C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib 
+
+
+부서번호(10~110)을 입력받아서
+해당 부서에 근무하는 사원들의 정보를 조회하시오.
+(이름, 부서명, 연봉, 입사일)

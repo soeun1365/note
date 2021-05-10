@@ -1,0 +1,20 @@
+<<<최초실행>>>
+git config --global user.name "soeun1365"
+git config --global user.email "soeun1365@naver.com"
+cd d:/spring0303/javastudy
+git init
+git add .
+git commit -m '[01]main=>create repository'
+git remote add origin <경로>
+git push origin main
+git pull origin main --allow-unrelated-histories
+:wq
+git push origin main
+
+<<<올릴땐>>>
+  1. 경로지정
+  2. git add .
+  3. git commit -m '  '
+  4. git push origin main
+  
+git에 올리는 파일은 닫아주고 진행하기 

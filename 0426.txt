@@ -1,0 +1,39 @@
+2021/04/26
+이클립스 실행
+preferences - Server - Runtime Environment
+general - workspace - UTF-8
+web - CSS Files - UTF-8
+web - HTML Files - UTF-8
+
+javaEE --> web개발용
+Create Dynamic Web Project 누르기
+
+WAS(Web Application Server)
+WebServer < WAS (포함되는관계)
+
+Tomcat이라는 WAS 사용
+WAS가 제일먼저 돎
+
+WebContent에 파일을 추가하는것이다.
+아래의 Server메뉴 눌러서 next, 오른쪽으로 add해줘야함
+
+outline task탭 없애기 필요없음
+
+Window - WebBrowser - Crome선택
+(Preperences - General - WebBrowser Crome선택 여기도 있음)
+
+D:\spring0303\install\apache-tomcat-8.5.65\conf   에서
+server.xml 메모장으로 열어보기(이것은 원본),
+
+<오라클이 8080을 쓰고있어서 WAS 톰캣을 9090으로 포트번호 바꿈>
+이클립스에서도 더블클릭으로 열 수 있음(Source 탭 누르기)
+63line에 8080을 9090으로 변경후 저장
+이클립스에서는 복사본으로 server.xml을 가지고 있는것이라
+이클립스에서 변경했어도 원본은 변경되어있지않음, 원본은 변경해도되고 안해도된다.
+
+DOM
+Document Object Modeling
+
+css
+DOM은
+inline 방식으로 적용됨 무조건 적용됨

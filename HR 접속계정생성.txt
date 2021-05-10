@@ -1,0 +1,16 @@
+HR 계정에는 아래와 같이 7개의 TABLE존재
+
+	COUNTRIES
+	DEPARTMENTS
+	EMPLOYEES
+	JOB_HISTORIES
+	HOBS
+	LOCATIONS
+	REGIONS
+
+위 테이블로
+SQL 연습 할수있기 때문에 계정생성하자
+
+생성전에 SYSTEM계정에서
+ALTER USER HR ACCOUNT UNLOCK IDENTIFIED BY 1111; 실행
+새접속 생성하기
