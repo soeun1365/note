@@ -1,0 +1,10 @@
+ip4버전으로 출력시킬때 설정할 것
+
+run탭
+run-Configurations
+Tomcat v8.5클릭
+Arguments 탭 클릭
+VM arguments:에다가
+마지막줄에 
+-Djava.net.preferIPv4Stack=true
+를 입력해주고 apply
