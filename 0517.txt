@@ -1,0 +1,10 @@
+2021-05-17
+
+cos.jar을 붙이자
+
+02_JSP폴더
+WebContent
+WEB_INF폴더
+lib에다가
+
+cos.jar을 드래그

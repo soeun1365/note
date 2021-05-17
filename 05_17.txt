@@ -1,0 +1,18 @@
+2021-05-17
+파일업로드에대해 배운다
+
+cos.jar 라이브러리를 추가한다.
+
+02_JSP폴더
+WebContent
+WEB_INF폴더
+lib에다가
+
+cos.jar을 드래그
+
+03_CAPTCHA폴더
+WebContent
+WEB_INF폴더
+lib에다가
+
+json-simple.jar을 드래그			-->27일 테스트에 문제나옴
