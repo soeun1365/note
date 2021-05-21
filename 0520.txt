@@ -1,0 +1,6 @@
+2021.05.20
+tomcat사이트 - download탭 - taglib
+
+jar files 클릭하면 tomcat설치 가능
+(https://tomcat.apache.org/download-taglibs.cgi)
+C:\SPRING0303_ase\install\jar\JSTL 에 보면 3개 들어가있음
