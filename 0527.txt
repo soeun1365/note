@@ -1,0 +1,4 @@
+2021-05-27
+
+META-INF폴더 아래에
+DB 설정을 담아두는 context.xml만들기
