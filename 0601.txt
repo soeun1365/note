@@ -1,0 +1,12 @@
+totalPage		: totalRecord, rdcordPerPage (SelectListBoardCommand)
+beginPage	: page(SelectListBoardCommand), pagePerBlock(X)
+endPage 		: beginPage, totalPage, pagePerBlock(X)
+
+SelectListBoardCommand
+- totalRecord
+- recordPerPage
+- page
+
+-> 위 세정보를 매개변수로 paging 처리하는 paging클래스에 전달
+-> Paging클래스에서 pagePerBlock를 직접 선언
+-> 링크 생성을 위해서 이동 경로를 Paging 클래스에 전달
