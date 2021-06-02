@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<!-- SQL 작성하는 곳 -->
+<!-- namespace는 mapper의 전체경로(패키지 포함)를 작성한다. -->
+<mapper namespace="mybatis.mapper.board">
+	
+	<insert id="insertBosrd" parameterType="dto.BoardDTO">	<!-- 패키지까지 명시하기 -->
+		INSERT INTO
+		 BORAD
+		VALUES (BOARD_SEQ.NEXTVAL,
+			     #{author},	<!-- DTO.Boarddto에서 getAuthor()를 실행한다. -->
+			     #{title},
+			     #{content}
+			     #{ip},
+			     0<!-- hit 수 -->
+			     SYSDATE,<!-- 작성일 -->
+			     SYSDATE<!-- 최종수정일 -->
+			     0, <!-- 정상:0, 삭제: -1 -->
+			     BOARD_SEQ.CURRVAL;	<!-- 그룹번호: 게시글번호와 같다. -->
+			     0, <!-- 같은 그룹 내붕서 순서를 정하는 순번 -->
+			     0<!-- 게시글(0), 댓글(1이상) 구분 -->
+			     ),
+	</insert>
+</mapper>
+
+
+
+wjsrjt

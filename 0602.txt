@@ -1,0 +1,25 @@
+2021-06-02
+
+mybatis
+- 더이상 dao에 string타입의 sql이 없다
+- xml에 따로 적어둔다
+- id로 dao에서 불러들이는 형식
+
+mybatis-3.5.2.jar 다운로드하는법
+- mybatis.org 사이트
+- mybatis 테이블에서 download클릭
+-3.5.2버전 찾아서 assets클릭
+- 집파일 다운로드 압축해제
+- mybatis-3.5.2.jar 파일이 여기에 있음
+
+- mybatis.org 사이트
+- mybatis 테이블에서 docs클릭
+
+Connection, PreparedStatement, ResultSet을 쓰지않고
+SqlSeissionFactory, SqlSession 사용
+
+
+BoardDAO: DBService로부터 SqlSessionFactory를 받아서 SqlSessiondfm todtjd
+DBSerice: SqlSessionFactory 빌드
+
+preparedStatement 는 autoCommit이기 때문에 commit안해줘도 된다.
