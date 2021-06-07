@@ -1,0 +1,7 @@
+2021-06-07
+
+ajax
+ - member table
+ - memberManager.jsp 에서 전부
+
+주로 관리자페이지를 ajax처리해서 만든다 
