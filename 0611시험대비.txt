@@ -1,0 +1,44 @@
+2021.06.11
+
+newproject할때
+SpringLegacyProject
+Spring MVC Project클릭
+next
+3단계로 패키지 이름 설정해주기
+끝
+
+<< 설명 >>
+src폴더에 아이콘에 S붙어있는데 Spring에만 있다는 뜻
+여기에
+webapp - resources : image, css, js등등 (비교하자면 webContent)
+spring : bean등록
+views : jsp등록
+root-context에서도, servlet-context에서도 bean을 만들 수 있다.	//원래는 root에다가 하긴함
+
+com.koreait.mvc02	->mvc02부분이 프로젝트마다 다 달라야함
+
+@Configurtation을 사용하기 위해 maven사이트에서 디펜던시를 다운받았다.
+
+
+=========다음주 월욜 시험===========================================
+싱글토은로 만드세요
+
+꾸미는 기능없음
+이클립스 사용
+html뼈대작업만
+모델2기준으로 crud
+mybatis 사용X, preparedstatement 사용
+
+javascript, jquery 간단한건 할수있게 , 성공실패 메시지등..
+
+Batch 프로그램 14장 보면 나옴
+
+git을 해당 프로젝트 단위로 올리는 연습 - workspace로 하면 안됨
+
+2-3시간 시험시간 예상
+
+ajax는 다음평가에 나옴 (그다음주 수욜)
+
+DB는 제공됨 table, sequence, data등..
+user만들줄 알아야한다.
+

@@ -1,0 +1,63 @@
+20210609
+
+======<1교시>==============================
+
+프레임워크, 
+정해져있는 내용안에서 코드작성을한다.
+누가 작성해도 다 비슷비슷한 코딩.
+나중에 점점 스프링 키는게 느려질것이다.
+인터넷 안되는 환경에서는 스프링 할 수 없다.
+centroal repository에서 내려받아서 하는거라
+내려받다가 뻑나는 경우도 많음..
+
+perferences - Server-Runtime Environment 에서 remove하기
+서버 등록 톰캣8.5
+오라클 충돌안나도록 8080인것을 9090으로 바꾸기
+
+Spring Legacy Project로 프로젝트 생성
+지금은 웹 안할꺼니까 Simple Spring Maven선택
+
+spring사에서 만든 클래스의 이름이 길다 단어3-4개들
+
+src/main/java: 자바코드
+src/main/resources: xml등..
+src/test/java: 테스트코드
+JRE System Library: 자바라이브러리, 컴에 설치된것
+Maven Dependencies: centroal에서 download받아서 가져온것(외부에서 받은것들)
+
+pom.xml 에서 코드 작성으로 jar파일 가져올수있다.
+다운받은 jar파일들이 오류나서 뻑났을땐 Maven Dependencies에서 싹 지우고 다시 돌리기 -> 다시 다운로드됨
+삭제위치: c/사용자/m2
+======<2교시>==============================
+용어정리
+field(= attribute, =property)
+constructor(=생성자)
+
+resources폴더에 아래를 추가
+Spring Bean Configuration File
+
+bean을 만드는 방법 두가지가 있다.
+======<3교시>==============================
+calculator bean으로 만들기 
+======<4교시>==============================
+======<5교시>==============================
+app-context2.xml만들때 이름 적고, p에 체크 후 finish
+  namespaces 탭에서도 기능들 넣고빼고 가능
+
+
+======<6교시>==============================
+======<7교시>==============================
+======<8교시>==============================
+
+
+
+
+
+
+
+
+
+
+
+
+
