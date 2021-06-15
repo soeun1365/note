@@ -1,0 +1,81 @@
+- 게시글/ 댓글
+- 게시글을 열면 댓글 작성 + 댓글 리스트
+
+- 로그인로그아웃은 없다
+-누구나 열고 작성할 수 있다.
+
+-index.jsp 열리면 3초 후에 게시판으로 이동하기
+(setTimeout 함수)
+
+-기본데이터5개 목록으로 나타나게
+
+-새글작성 -> 다시 목록으로 이동
+-제목 클릭해서 열기
+-게시글 삭제(댓글 달린 건 안지워짐)
+  -댓글여부 확인 후 "메시지"
+  -댓글 없으면 지워지고 다시 목록으로 이동
+
+- 게시글 보기 화면 하단
+- 조회수 늘리기(댓글작성 눌렀을땐 조회수 안올라가게)
+- 열때 
+if(session.getAttribute("open") == null){
+  BoardDAO.getInstance().updateHit(no);
+  sseion.setAttribute("open", true);
+}
+- 언제 session의 open을 없애는가?
+: 목록보기로 나갔을때
+ if(session.getAttribute("open")==null){
+  session.removeAttribute("open");
+}
+- 댓글작성 + 댓글 리스트
+
+- 댓글 작성: 내용 + 작성자 이력 후 댓글 작성
+- 댓글 등록 후 게시글 보기 화면으로 되돌아 오기
+ 
+- 댓글은 삭제수정은 없다 추가만있다.
+
+-배치
+- 최대 조회수를 가진 게시글을 가져와서 콘솔에 출력
+- Hit값으로 정렬 후 가장 높은 값 select로 가져오기
+- 방법1)
+SELECT * FROM BOARD WHERE HIT = (서브쿼리SELECT MAX(HIT)FROM 
+BOARD) 
+
+- 방법2) 
+  SELECT *
+  FROM (SELECT * FROM BOARD ORDER BY HIT DESC)
+ WHERE ROWNUM = 1;
+ 내림차순 정렬 -> 행번호 붙이고 행번호 붙여서 가져오기
+
+DB연동 비교
+9장 Conection 하나 만들고 계속 쓰는방식 (얻어오지도않고 받지도않음)
+10장 dao에서는 커넥션풀을 쓴것, meta-inf밑에 파일-context.xml보면 커넥션파일을 만들어놓고 읽어내는 방식
+
+커넥션 원하는 방식으로 풀기 상관없음
+커넥션 풀 으로 연습하기 - 다음 시험에 이방식으로 할것
+
+동작형태에 맞게 보고해도됨
+
+배치
+http://www.cronmaker.com/;jsessionid=node01lsd9xpdv47wo1n2oegh5gwff9736554.node0?0
+
+log4j-1.2.16.jar
+slf4j-api-1.7.7.jar
+slf4j-log4j12-1.7.7.jar
+라이브러리 둬야함
+
+CronScheduler는 그대로써도됨
+CronSchedulerListener은 cronMaker.com에서 크론식 가져오기
+
+Top3StudentJob의 본문 채우는게 일이지
+-10장에 insertReplyCommand쪽 참고해보기
+dao갔다와야해
+파일만드는거 안할거임
+간단한거함
+
+리스너만들때
+클래스 - 인터페이스 상속(ServletContextListener)가져오기
+기본클에 추가작업하는것
+
+job을 만들때도 
+인터페이스를 job을 상속받으면됨
