@@ -1,0 +1,38 @@
+2021/06/14
+1교시=======================================================
+05_MVC_REQUEST 프로젝트제작
+MVC이걸로 선택 앞으로는
+초기에 생성하는com.koreait.mvc03 이거 로만든 패키지 이름 바꾸면 안됨
+contextPath는 mvc03임
+
+appServlet폴더에 servlet-context.xml 보면 base-package에 있는게 바뀌면안됨
+그래서 controller패키지를 만드려면
+HOMEController삭제
+new - package 해서 com.koreait.mvc03.controller 이렇게 만들기
+새로고침하면 com.koreait.mvc03 은 포함되는 관계라서 사라짐
+
+컨트롤러는 자바class
+
+home.jsp 삭제
+WEB-INF / view폴더에 index.jsp생성
+
+html4를 html 5 형식으로 되게 jsp를 수정하기
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+views 에 폴더분리 forder01생성
+view01,view02로 이동
+
+2교시=======================================================
+MyController2 만들기
+
+
+4교시=======================================================
+configuration패키지 새성
+아래에 BeanConfiguration 클래스생성
+컨트롤러5 생성- @Controller해주기
+
+5교시 ~ 8교시=================================================
+
+시험
+

@@ -1,0 +1,68 @@
+20210615
+1교시
+맵핑값 뒤에 ? 붙이고 파라미터 붙여 보내기
+
+request는 요청을 처리, model은 결과가 나올 응답을 처리
+
+session을 쓰기위해 request는 중요
+
+DB연결
+ - DBConnector: Connection1개
+ - context.xml
+ - Mybatis
+
+dao에 con만들어놓고 close 하지 않는버전
+
+dao를 메소드별로 매번 con만들고닫고-> 지향
+
+3교시===================================
+퀴즈
+Board.java
+  String title;
+  int hit;
+  Date date;
+
+보낼때 파라미터
+  title=공지사항
+  hit=5
+  /mvc03/quiz/v01 : Request로 보내기
+
+request, !RequestParam, DTO, @ModelAttribute
+
+받을때
+제목: 공지사항
+조회수:5
+작성일: 오늘날짜나오게
+
+4교시===================================
+
+css위치도 servlet-context.xml에 경로잡기
+
+5교시===================================
+forward이동은 기존 request가 실려가고, jsp로 이동하는것이다.
+
+6교시===================================
+ajax 다음주 평가()06.23)
+
+일반적: jsp1 -> controller -> jps2
+ajax: jsp1 <-> controller (돌아옴)
+
+ajax는 json형태로 데이터 주고받는다.
+
+https://mvnrepository.com/에 다가 jackson검색 2.9.8버전 복사
+	https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.9.8
+
+pom.xml에 디펜던시스에 추가하기
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.9.8</version>
+</dependency>
+
+
+제이쿼리 사용
+jqueryCDN에서 minified버전 복사 붙여넣기
+
+ajax({})
+
