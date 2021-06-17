@@ -1,0 +1,24 @@
+2021-06-17
+
+주입하는 법 3가지
+1. field에 @Autowired적어주기
+2. setter로 setcommand 메소드에 @Autowired적어주기
+  root-context에 bean미리 만들어두고
+3. configuration
+
+
+메소드의 반환타입이 bean의 class가 되고
+메소드의 이름이 bean의 id가 된다.
+
+
+bean을 만드는 방법은 두가지가있다.
+xml에서, java에서
+xml에서 하는건 좀 줄어드는 추세
+
+bean 생성하는것
+분리 root-context와 servlet-context로
+command만드는것은 servlet-context로
+
+bean만들면 싱글톤으로 만들어짐
+그래서 boardDAO에 싱글톤처리를 안한것이다
+
