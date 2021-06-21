@@ -1,0 +1,41 @@
+2021.06.21
+1교시==================================
+인코딩 web.xml
+최신화 pom.xml
+root-context.xml에 빈생성
+
+2교시==================================
+이클립스 기능 쓰려고 다운받음
+help탭
+instal new software
+
+oxygen...체크
+database...체크
+
+show-view dataSource Explorer
+
+
+controller만들고 @controller붙여주기
+
+5교시==================================
+root-context내용 전부 주석처리
+beanConfiguration.java로 할거니
+cglib 추가해야함
+
+
+ajax:json처리(잭슨이 아님), error에 funciton처리
+
+junit
+
+
+시험대비
+
+1. 라이브러리에 obcjc, json-simple넣기
+2. dao, dto, command 패키지 생성(controller안함)
+3. jsp와 java(servlet)의 직접통신이므로 controller을 통하지만 구현 그러게 x
+4. jsp에서 java(servlet)올 보낼땐 param, 반대는 json으로 보내기
+5. insert, list
+ 
+
+getConnection, close는 private이어도 괜찮다.
+외부에서불러다 쓸일은 없으니까
