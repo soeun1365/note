@@ -1,0 +1,29 @@
+2020.06.22
+
+프로젝트 16_Junit_BEFORE_TEST
+
+Junit사용할수있게 빌드패스 작업하기
+  build path - add library에 junit
+  version5
+
+show view로 JUnit꺼내기
+프로젝트 실행할때 run에서 unitTest로 실행하는것이다
+
+hunit other에 있음 - 클래스의 일종임
+class로 만들어도되지만 기본적으로 되어있는게있음
+
+serUp()  tearDown()  등 테스트 순서에따라 체크
+
+Junit 점수배점이 20-30점이다.
+캡처해서 정보 내기
+
+
+insert하기로했다
+insert한 회원이 있는지 null인지 notnull인지 활용
+dao로부터 데이터 가져와서 확인
+
+emial인증하는것 내일 진도
+SHA-256 
+
+SQL로 데이터 짤때 DATE는 보통 두개로 나누는게 좋음
+가입날짜, 수정날짜
