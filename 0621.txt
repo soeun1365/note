@@ -28,7 +28,7 @@ ajax:json처리(잭슨이 아님), error에 funciton처리
 junit
 
 
-시험대비
+시험대비====================================================
 
 1. 라이브러리에 obcjc, json-simple넣기
 2. dao, dto, command 패키지 생성(controller안함)
