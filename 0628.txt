@@ -1,0 +1,91 @@
+==========1교시==========================
+
+로그인
+ - 비밀번호 암호화 :commons - codec Base64
+
+회원가입
+ - 이메일인증
+ - xxs(<, >, $, " 잃히지않도록 처리)
+
+아이디찾기
+ - 이메일 이용해 찾기(email에 unique처리)
+ - DB : tel 이용
+
+비밀번호찾기
+ - 이메일 인증으로 본인 확인
+ - 임시비번발급 / 비밀번호 변경
+
+
+5장에 request배울때
+전달받은 파라미터 처리하는 방법 복습
+
+
+
+==========2교시==========================
+
+모두 ajax처리 + jackson
+
+- 회원 목록 보기 + paging
+- 회원 정보 보기 + popup
+- 회원 삽입/삭제/수정
+
+
+==========3교시==========================
+
+16_AJAX 프로젝트생성
+
+1. web.xml인코딩
+2. pom.xml 버전업 update project
+
+3. 디펜던시
+- mybatis
+- mybarig-spring
+- jackson-databind
+- lombok
+- HikariCP
+
+4. lombok 설치 : sts 대상
+- 1)))
+  lombok.exe클릭
+  이게 안되면 2))) 방법 수행
+
+- 2)))
+  cmd 실행
+  C:\SPRING0303_ase\install\jar\LOMBOK
+  -> 롬복 jar위치 복사
+
+  cd (붙여넣기)
+
+  드라이브가 다를경우
+  d: 쳐주기
+
+  java -jar lombok.jar 쳐주기
+
+  고추 창 뜸
+
+  specify location클릭
+  sts를 찾아가야한다
+  ase_spring0303 에 install에 있지
+
+
+5. bean만들기
+  1) root-context.xml  또는
+  2) BeanConfiguration.java
+
+
+
+==========5교시==========================
+
+회원 삽입 코드부터 시작
+
+
+
+
+
+
+
+
+
+
+
+
