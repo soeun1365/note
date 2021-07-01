@@ -1,0 +1,67 @@
+0701
+1교시====================================================
+1. 프로젝트생성 IntegrationProject
+2.web.xml인코딩
+3.pom.xml
+4.maven에 junit검색
+	junit 사용할건데 junit5까지가 junit ujpiter api
+		이전버전까지가 junit
+
+	pom에 보면 jnuit있음 버전만 바꿔줌 4.1.2로
+
+5.Quartz 검색
+	2.3.0버전 복 붙
+6.JSON In Java  20180813버전
+7.jacson, bean configuration, mybatis3개
+8.패키지들 생성
+ repositor는 dao
+ domain은 dto
+ service가 command
+ 
+9. Board만들어줌
+10.mapper repository에 복붙
+11.BoardRepository repository에 클래스 생성 
+12.service에 BoardService 클래스 생성
+13.controller에 BoardController 클래스 생성
+14.
+
+5교시==================================================
+ Junit Test Case 만들기
+1. 메소드이름은 자유
+2. run - junit test로 실행
+  fail("Not yet implemented"); 때문에 실패뜸
+3.
+
+6교시===================================================
+1. batch 패키지에
+  listener 만들어주기 이름적고 Lifecycle에 체크
+2. listener은 run하면 실행되는것
+3. batch패키지에 interface로 job을 설정하고 BoardJob클래스 생성
+4.  cron maker
+5.
+
+통합구현 서술형대비=====================================
+3-4페이지
+
+1. 송신 시스템과 모듈
+2. 중계 시스템
+3. 수신 시스템과 모듈
+4. 연계 데이터
+5. 네트워크
+
+----------------
+
+11페이지
+
+표 1-11
+
+----------------
+
+58-59페이지
+
+암호화 알고리즘
+
+
+----------------
+
+수업에서 다뤘던 보안 관련 내용
