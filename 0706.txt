@@ -1,0 +1,35 @@
+0706
+다음평가
+  git쓸때 read me 편집
+  소스코드 중 오류 찾기
+
+
+알집파일 열기도 문제에 나옴
+
+실제문제에서는 6문제가 나옴 개당 5점 총 30점 
+
+index에 jquerycdn이 없음	 $ 어쩌구가 뜸
+
+form 에 name속성이 없다	nullpoint뜸
+
+postmapping인지 getmapping인지 확인
+
+@Configuration이 없다
+
+@Controller 이 없다
+
+MemberDAO가 interface형식일때 mapper의 namespace는 DAO의이름이다.
+
+mapper의 id를  MemberDAO에서 동일하게 쓰기
+
+location.href로 이동하면 단순 a링크 이동이므로 form의 요소를 가져가지 않는다.
+
+get방식인지 post방식인지 matching해보기
+
+json데이터(ajax통신)할때는 @responsebody가 필요하다
+
+
+junit
+
+setup, after 체크해서 먼저 테스트할 함수를 선택 할 수 있다.
+
